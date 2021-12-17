@@ -59,18 +59,17 @@ end
 
 function love.update(dt)
     
-    
+    --Move it move it!
     posx = posx + x*dt
+    posy = posy + y*dt
+  
+    --Collision detecting.
     
     if collides(posx, winx, dvd.width) then 
     	x=-x
     	posx=push(x, posx, winx, dvd.width)
     end
-    
-
-
-    posy = posy + y*dt
-		
+    		
     if collides(posy, winy, dvd.height) then 
     	y=-y
     	posy=push(y, posy, winy, dvd.height)
