@@ -2,6 +2,7 @@ function love.load()
 	winx = 800
 	winy = 600
 	love.window.setMode(winx, winy)
+	love.window.setTitle('Visual Soother 0.0.1')
 	posx = 300
 	posy = 300
 	x = 200
